@@ -1,16 +1,31 @@
-### Hi there 👋
+<?php
 
-<!--
-**ROHAN-SINGH-SISODIYA/ROHAN-SINGH-SISODIYA** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+namespace rohanSingh;
 
-Here are some ideas to get you started:
+class About extends Me
+{
+    public function getCurrentWorkplace(): array
+    {
+        return [
+            'workplace' => [
+                'company' => 'paktolus',
+                'position' => 'Software Developer'         
+            ]
+        ];
+    }
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+    public function getKeySills(): array
+    {
+        return [
+            Javascript::class,
+            Nodejs::class,
+            Reactjs::class,
+            MongoDB::class,
+            PostgreSQL::class,
+            Mysql::class,
+            Expressjs::class,
+            Php::class,
+            AWS::class,
+        ];
+    }
+}
